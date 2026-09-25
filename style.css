@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #c084fc;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    color: #c084fc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 35px 100px rgb(71, 18, 82);
+    border-bottom: 1px solid #471252;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.instrucoes {
+    font-size: 14px;
+    color: #a855f7;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%; 
+    max-width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 35px 100px rgb(71, 18, 82);
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+form label {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #fff;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #7e22ce;
+    outline: 3px solid #a855f7; 
+    outline-offset: 1px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+fieldset legend {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.opcao-grupo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.opcao-grupo input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.opcao-grupo label {
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.mensagem-erro {
+    font-size: 13px;
+    color: #b91c1c;
+    margin-top: 2px;
+    font-weight: 500;
+}
+
+button {
+    padding: 12px;
+    background: #7e22ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #6b21a8;
+}
+
+button:focus {
+    outline: 3px solid #a855f7;
+    outline-offset: 2px;
+}
+
+footer {
+    background-color: black;
+    color: #a855f7;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    border-top: 1px solid #471252;
+}
