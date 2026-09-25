@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Atendimento</h1>
+    </header>
+
+    <main>
+        <h2>Contato</h2>
+        <p class="instrucoes">Campos marcados com asterisco (*) são obrigatórios.</p>
+
+        <form action="#" method="POST">
+            <!-- Campo 1: Nome (Ligado com id/for + aria-required) -->
+            <div class="campo-grupo">
+                <label for="txt-nome">Nome completo *</label>
+                <input type="text" id="txt-nome" name="nome" required aria-required="true">
+            </div>
+
+            
+            <div class="campo-grupo">
+                <label for="txt-email">E-mail *</label>
+                <input type="email" id="txt-email" name="email" required aria-required="true" aria-describedby="msg-erro-email">
+                <!-- Requisito: Mensagem de erro com role="alert" -->
+                <span id="msg-erro-email" class="mensagem-erro" role="alert">Por favor, insira um e-mail válido (ex: nome@email.com).</span>
+            </div>
+
+          
+            <div class="campo-grupo">
+                <label for="sel-assunto">Assunto</label>
+                <select id="sel-assunto" name="assunto">
+                    <option value="duvida">Dúvida</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+            </div>
+
+            
+            <fieldset>
+                <legend>Tipo de retorno desejado *</legend>
+                
+                <div class="opcao-grupo">
+                    <input type="radio" id="rad-urgente" name="prioridade" value="urgente" checked>
+                    <label for="rad-urgente">Quero resposta urgente</label>
+                </div>
+
+                <div class="opcao-grupo">
+                    <input type="radio" id="rad-normal" name="prioridade" value="normal">
+                    <label for="rad-normal">Pode ser em tempo normal</label>
+                </div>
+            </fieldset>
+
+            
+            <div class="campo-grupo">
+                <label for="txt-mensagem">Mensagem</label>
+                <textarea id="txt-mensagem" name="mensagem" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Enviar Formulário</button>
+        </form>
+    </main>
+
+    
+    <footer>
+        <p>&copy;--2026 Turma 2DAT2--</p>
+    </footer>
+</body>
+</html>
